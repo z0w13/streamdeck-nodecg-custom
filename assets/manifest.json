@@ -2,25 +2,71 @@
   "Actions": [
     {
       "Icon": "images/action1.icon",
-      "Name": "Your first action",
+      "Name": "Toggle Preview",
       "States": [
         {
           "Image": "images/action1.key",
+          "Title": "Preview",
           "TitleAlignment": "middle",
-          "FontSize": "15"
+          "FontSize": "12"
         }
       ],
       "SupportedInMultiActions": false,
       "Tooltip": "",
-      "UUID": "reverse.dns.formatted.namespace.action"
+      "UUID": "ee.zowi.nodecg.preview"
+    },
+    {
+      "Icon": "images/action1.icon",
+      "Name": "Toggle Break",
+      "States": [
+        {
+          "Image": "images/action1.key",
+          "Title": "Break",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "",
+      "UUID": "ee.zowi.nodecg.break"
+    },
+    {
+      "Icon": "images/action1.icon",
+      "Name": "Toggle Mic",
+      "States": [
+        {
+          "Image": "images/action1.key",
+          "Title": "Mic",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "",
+      "UUID": "ee.zowi.nodecg.mic"
+    },
+    {
+      "Icon": "images/action1.icon",
+      "Name": "Toggle Speakers",
+      "States": [
+        {
+          "Image": "images/action1.key",
+          "Title": "Speakers",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "",
+      "UUID": "ee.zowi.nodecg.speakers"
     }
   ],
   "SDKVersion": 2,
-  "Author": "your name",
+  "Author": "Zowie",
   "CodePath": "plugin.html",
   "PropertyInspectorPath": "propertyinspector.html",
-  "Name": "streamdeck template",
-  "Description": "a description",
+  "Name": "Zowie's Stuff",
+  "Description": "Plugin to interact with Zowie_UwU's NodeCG setup",
   "Icon": "images/pluginIcon",
   "Version": "0.0.0-development",
   "OS": [
