@@ -1,11 +1,11 @@
 {
   "Actions": [
     {
-      "Icon": "images/action1.icon",
+      "Icon": "images/unmuted",
       "Name": "Toggle Preview",
       "States": [
         {
-          "Image": "images/action1.key",
+          "Image": "images/unmuted",
           "Title": "Preview",
           "TitleAlignment": "middle",
           "FontSize": "12"
@@ -16,11 +16,11 @@
       "UUID": "ee.zowi.nodecg.preview"
     },
     {
-      "Icon": "images/action1.icon",
+      "Icon": "images/unmuted",
       "Name": "Toggle Break",
       "States": [
         {
-          "Image": "images/action1.key",
+          "Image": "images/unmuted",
           "Title": "Break",
           "TitleAlignment": "middle",
           "FontSize": "12"
@@ -31,11 +31,11 @@
       "UUID": "ee.zowi.nodecg.break"
     },
     {
-      "Icon": "images/action1.icon",
+      "Icon": "images/unmuted",
       "Name": "Toggle Mic",
       "States": [
         {
-          "Image": "images/action1.key",
+          "Image": "images/unmuted",
           "Title": "Mic",
           "TitleAlignment": "middle",
           "FontSize": "12"
@@ -46,11 +46,11 @@
       "UUID": "ee.zowi.nodecg.mic"
     },
     {
-      "Icon": "images/action1.icon",
+      "Icon": "images/unmuted",
       "Name": "Toggle Speakers",
       "States": [
         {
-          "Image": "images/action1.key",
+          "Image": "images/unmuted",
           "Title": "Speakers",
           "TitleAlignment": "middle",
           "FontSize": "12"
