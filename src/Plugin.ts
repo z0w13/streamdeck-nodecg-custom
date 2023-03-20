@@ -1,5 +1,6 @@
-import { StateResponse } from './Shared';
 import { Streamdeck } from '@rweich/streamdeck-ts';
+
+import { StateResponse } from './Shared';
 
 const mutedImage =
   'data:image/png;base64,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';
@@ -129,28 +130,32 @@ plugin.on('willDisappear', (event) => {
 plugin.on('keyDown', async (event) => {
   try {
     switch (getNormalizedActionName(event.action)) {
-      case 'nodecg.preview':
+      case 'nodecg.preview': {
         await fetch(baseUrl + '/zowiettv/audio/preview/' + (state.gen.reaper.preview ? 'unmute' : 'mute'), {
           method: 'POST',
         });
         updateState();
         break;
-      case 'nodecg.break':
+      }
+      case 'nodecg.break': {
         await fetch(baseUrl + '/zowiettv/audio/break/' + (state.gen.reaper.break ? 'unmute' : 'mute'), {
           method: 'POST',
         });
         updateState();
         break;
-      case 'nodecg.mic':
+      }
+      case 'nodecg.mic': {
         await fetch(baseUrl + '/zowiettv/audio/mic/' + (state.gen.reaper.mic ? 'unmute' : 'mute'), { method: 'POST' });
         updateState();
         break;
-      case 'nodecg.speakers':
+      }
+      case 'nodecg.speakers': {
         await fetch(baseUrl + '/zowiettv/audio/speakers/' + (state.gen.reaper.speakers ? 'unmute' : 'mute'), {
           method: 'POST',
         });
         updateState();
         break;
+      }
     }
     plugin.showOk(event.context);
   } catch {
