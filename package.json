@@ -16,6 +16,9 @@
     "type-check": "tsc --noEmit",
     "update-template": "update-template https://github.com/rweich/streamdeck-ts-template"
   },
+  "engines": {
+    "node": ">=18.15.0"
+  },
   "dependencies": {
     "@rweich/streamdeck-ts": "^5.0.0"
   },
