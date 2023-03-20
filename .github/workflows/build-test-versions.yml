@@ -9,17 +9,21 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 14.x, 16.x, 17.x ]
+        node-version: [ 18.x, 19.x ]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install
-      - run: yarn type-check
-      - run: yarn lint
-      - run: yarn build-prod
-      - run: yarn set-plugin-version 0.0.0
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - run: pnpm install
+      - run: pnpm type-check
+      - run: pnpm lint
+      - run: pnpm build-prod
+      - run: pnpm set-plugin-version 0.0.0

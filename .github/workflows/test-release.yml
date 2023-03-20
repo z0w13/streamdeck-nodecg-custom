@@ -4,20 +4,21 @@ on: [ push ]
 
 jobs:
   release:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: Get branch name
         id: branch-name
-        uses: tj-actions/branch-names@v5
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        uses: tj-actions/branch-names@v6
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: yarn install
+          node-version: 18
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - run: pnpm install
       - name: Release Test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: yarn semantic-release --dry-run --branches ${{ steps.branch-name.outputs.current_branch }}
+        run: pnpm semantic-release --dry-run --branches ${{ steps.branch-name.outputs.current_branch }}
