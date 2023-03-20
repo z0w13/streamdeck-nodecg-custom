@@ -11,7 +11,7 @@
           "FontSize": "12"
         }
       ],
-      "SupportedInMultiActions": false,
+      "SupportedInMultiActions": true,
       "Tooltip": "",
       "UUID": "ee.zowi.nodecg.preview"
     },
@@ -26,7 +26,7 @@
           "FontSize": "12"
         }
       ],
-      "SupportedInMultiActions": false,
+      "SupportedInMultiActions": true,
       "Tooltip": "",
       "UUID": "ee.zowi.nodecg.break"
     },
@@ -41,7 +41,7 @@
           "FontSize": "12"
         }
       ],
-      "SupportedInMultiActions": false,
+      "SupportedInMultiActions": true,
       "Tooltip": "",
       "UUID": "ee.zowi.nodecg.mic"
     },
@@ -56,7 +56,7 @@
           "FontSize": "12"
         }
       ],
-      "SupportedInMultiActions": false,
+      "SupportedInMultiActions": true,
       "Tooltip": "",
       "UUID": "ee.zowi.nodecg.speakers"
     }
